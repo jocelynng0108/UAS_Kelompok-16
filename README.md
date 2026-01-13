@@ -86,6 +86,16 @@ Tujuan Proyek:
 
 - Error Handling: Graceful error states untuk semua skenario
 
+📊 Arsitektur Model
+
+graph TD
+    A[Input Image] --> B[Preprocessing]
+    B --> C[YOLOv4 Model]
+    C --> D[Bounding Boxes]
+    D --> E[NMS Filtering]
+    E --> F[Display Results]
+    F --> G[Save to History]
+
 📱 Cara Penggunaan
 
 Deteksi Melalui Kamera
