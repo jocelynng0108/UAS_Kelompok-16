@@ -88,13 +88,7 @@ Tujuan Proyek:
 
 📊 Arsitektur Model
 
-graph TD
-    A[Input Image] --> B[Preprocessing]
-    B --> C[YOLOv4 Model]
-    C --> D[Bounding Boxes]
-    D --> E[NMS Filtering]
-    E --> F[Display Results]
-    F --> G[Save to History]
+    [Input Image] --> [Preprocessing] --> [YOLOv4 Model] --> [Bounding Boxes] --> [NMS Filtering] --> [Display Results] --> [Save to History]
 
 📱 Cara Penggunaan
 
