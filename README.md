@@ -86,6 +86,23 @@ Tujuan Proyek:
 
 - Error Handling: Graceful error states untuk semua skenario
 
+# Struktur Source Code
+
+disease_plant/
+├── lib/
+│   ├── main.dart                    # Entry point aplikasi
+│   ├── diagnosis_detail.dart        # Halaman detail diagnosis penyakit
+│   ├── disease_info.dart            # Database gejala & solusi penyakit
+│   ├── history_page.dart            # Halaman riwayat deteksi
+│   └── history_service.dart         # Service penyimpanan riwayat
+├── assets/
+│   ├── best_float32.tflite          # Model Deep Learning YOLOv4
+│   └── labels.txt                   # Label penyakit tanaman
+├── android/                         # Konfigurasi Android
+├── ios/                             # Konfigurasi iOS
+├── pubspec.yaml                     # Dependensi Flutter
+├── README.md                        # Dokumentasi proyek
+
 📊 Arsitektur Model
 
     [Input Image] --> [Preprocessing] --> [YOLOv4 Model] --> [Bounding Boxes] --> [NMS Filtering] --> [Display Results] --> [Save to History]
